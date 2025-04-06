@@ -2,8 +2,11 @@
 #define _PARALLAX_H
 
 #include<_common.h>
-#include<_textureloader.h>
+// #include<_textureloader.h> // No longer needed here if removed below
 #include<_timer.h>
+#include<string> // Include string for the scroll function parameter
+
+using namespace std; // Add if 'string' is not recognized otherwise
 
 class _parallax
 {
@@ -11,14 +14,18 @@ class _parallax
         _parallax();
         virtual ~_parallax();
 
-        _textureLoader *background = new _textureLoader();
+        // <<< REMOVED >>> _textureLoader *background = new _textureLoader();
         _timer *tmr = new _timer();
 
-        void drawBackground(float, float); // pass width and Height
-        void initPrlx(char *);             // File Name
-        void scroll(bool,string,float);    // Auto move, direction, speed
+        // <<< MODIFIED >>> Added textureID parameter
+        void drawBackground(GLuint textureID, float width, float height);
 
-        float xMax,xMin,yMax,yMin;         // Texture coordinates
+        // <<< MODIFIED >>> Takes no parameters now
+        void initPrlx();
+
+        void scroll(bool, string, float); // Changed from std::string to string
+
+        float xMax,xMin,yMax,yMin;
         float speed;
 
     protected:

@@ -11,7 +11,7 @@ class _bullets
         _bullets();
         virtual ~_bullets();
 
-        _textureLoader *myTex = new _textureLoader();
+        //_textureLoader *myTex = new _textureLoader();
         _timer *myTime = new _timer();
 
         enum{IDLE,SHOOT,HIT};

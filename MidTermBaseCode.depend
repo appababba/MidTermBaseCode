@@ -221,18 +221,25 @@
 	<math.h>
 	<time.h>
 
-1743822229 c:\users\roryc\onedrive\desktop\csci178\midtermbasecode\include\_scene.h
+1743893655 c:\users\roryc\onedrive\desktop\csci178\midtermbasecode\include\_scene.h
 	<windows.h>
 	<GL/gl.h>
-	<_common.h>
-	"_textureloader.h"
+	<vector>
 	<string>
 	<map>
+	"_textureLoader.h"
+	"_common.h"
+	"_timer.h"
+	"_player.h"
+	"_enms.h"
+	"_bullets.h"
+	"_parallax.h"
+	"_inputs.h"
 
 1743806482 source:c:\users\roryc\onedrive\desktop\csci178\midtermbasecode\src\_bullets.cpp
 	"_bullets.h"
 
-1743806481 c:\users\roryc\onedrive\desktop\csci178\midtermbasecode\include\_bullets.h
+1743890623 c:\users\roryc\onedrive\desktop\csci178\midtermbasecode\include\_bullets.h
 	<_bullets.h>
 	<_timer.h>
 	<_textureloader.h>
@@ -272,10 +279,10 @@
 	<_common.h>
 	<_textureloader.h>
 
-1743806481 c:\users\roryc\onedrive\desktop\csci178\midtermbasecode\include\_parallax.h
+1743890890 c:\users\roryc\onedrive\desktop\csci178\midtermbasecode\include\_parallax.h
 	<_common.h>
-	<_textureloader.h>
 	<_timer.h>
+	<string>
 
 1743806481 c:\users\roryc\onedrive\desktop\csci178\midtermbasecode\include\_sounds.h
 	<SNDS/irrKlang.h>
@@ -387,18 +394,20 @@
 1743810108 source:c:\users\roryc\onedrive\desktop\csci178\midtermbasecode\src\_model.cpp
 	"_model.h"
 
-1743806482 source:c:\users\roryc\onedrive\desktop\csci178\midtermbasecode\src\_parallax.cpp
+1743890920 source:c:\users\roryc\onedrive\desktop\csci178\midtermbasecode\src\_parallax.cpp
 	"_parallax.h"
+	<GL/gl.h>
 
-1743806482 source:c:\users\roryc\onedrive\desktop\csci178\midtermbasecode\src\_player.cpp
+1743891056 source:c:\users\roryc\onedrive\desktop\csci178\midtermbasecode\src\_player.cpp
 	"_player.h"
+	<GL/gl.h>
 
-1743806481 c:\users\roryc\onedrive\desktop\csci178\midtermbasecode\include\_player.h
+1743890596 c:\users\roryc\onedrive\desktop\csci178\midtermbasecode\include\_player.h
 	<_common.h>
 	<_textureloader.h>
 	<_timer.h>
 
-1743888093 source:c:\users\roryc\onedrive\desktop\csci178\midtermbasecode\src\_scene.cpp
+1743897340 source:c:\users\roryc\onedrive\desktop\csci178\midtermbasecode\src\_scene.cpp
 	"_scene.h"
 	<windows.h>
 	<GL/glu.h>
@@ -406,6 +415,7 @@
 	<sstream>
 	<string>
 	<iostream>
+	<vector>
 
 1743806482 source:c:\users\roryc\onedrive\desktop\csci178\midtermbasecode\src\_sounds.cpp
 	"_sounds.h"

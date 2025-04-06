@@ -11,11 +11,11 @@ class _player
         _player();
         virtual ~_player();
 
-        _textureLoader *pTex = new _textureLoader();
+        // _textureLoader *pTex = new _textureLoader();
         _timer *pTmer = new _timer();
 
-        void initPlayer(int,int,char*); // number of x,y frames, filename
-        void drawPlayer();              // to render
+        void initPlayer(int framesX, int framesY); // number of x,y frames, filename
+        void drawPlayer(GLuint textureID);              // to render
         void playerActions();           // place actions
 
         enum {STAND,LEFTWALK,RIGHTWALK,RUN,JUMP,ATTACK}; // define actions based on the sprite
