@@ -3,11 +3,11 @@
 
 #include <windows.h>
 #include <GL/gl.h>
-#include <vector> // <<< NEW >>> Need vector for enemies/bullets
-#include <string> // <<< NEW >>> Need string for text drawing
-#include <map>    // <<< NEW >>> Need map for font data
+#include <vector> 
+#include <string> 
+#include <map>    
 
-// --- Include headers for all game components --- // <<< NEW >>>
+
 #include "_textureLoader.h"
 #include "_common.h" // Assuming vec2, vec3 are here
 #include "_timer.h"
@@ -16,9 +16,9 @@
 #include "_bullets.h"
 #include "_parallax.h"
 #include "_inputs.h"
-// #include "_collisioncheck.h" // Include if you have this class
-// #include "_sounds.h"      // Include if you have this class
-// #include "_lightsetting.h" // Include if you have this class
+// #include "_collisioncheck.h" 
+// #include "_sounds.h"      
+// #include "_lightsetting.h" 
 
 
 // Enum for different game states
@@ -52,9 +52,9 @@ class _scene
         GLint drawScene();    // Draw scene (calls specific draw functions based on state)
         void reSize(GLint, GLint); // Handle window resize
         GLuint menuBackgroundTextureID;
-        int winMsg(HWND, UINT, WPARAM, LPARAM); // Handle window messages (input)
+        int winMsg(HWND, UINT, WPARAM, LPARAM); // Handle window messages 
 
-        // <<< NEW >>> Game Update function (call this from main loop)
+     
         void updateGame(float deltaTime);
 
     protected:
@@ -67,11 +67,12 @@ class _scene
         // --- Texture IDs ---
         GLuint landingTextureID;    // ID for landing page texture
         GLuint fontTextureID;       // ID for the font texture
-        // <<< NEW >>> IDs for game assets
+
         GLuint playerTextureID;
         GLuint enemyTextureID;
         GLuint bulletTextureID;
         GLuint backgroundTextureID;
+        GLuint helpTextureID;
 
         // --- Font Rendering Data ---
         std::map<int, CharData> fontDataMap; // Map character IDs to their data
@@ -90,15 +91,15 @@ class _scene
         _player* player = nullptr;          // The player character
         _parallax* background = nullptr;    // The scrolling background
         _inputs* gameInputs = nullptr;      // Input handler specifically for game state
-        _timer* gameTimer = nullptr;        // A timer for game updates/animations (might be better inside objects that need it)
-        // _lightsetting* lights = nullptr; // Example if you have this class
-        // _sounds* soundManager = nullptr; // Example if you have this class
+        _timer* gameTimer = nullptr;        // A timer for game updates/animations 
+        // _lightsetting* lights = nullptr; // 
+        // _sounds* soundManager = nullptr; // 
         // _collisioncheck* collisionChecker = nullptr; // Example
 
         // Collections for multiple enemies/bullets
         std::vector<_enms*> enemies;
         std::vector<_bullets*> bullets;
-        // Consider a fixed-size array or pool for bullets for better performance
+        
         const int MAX_BULLETS = 20; // Example limit
 
         bool loadMenuBackgroundTexture();

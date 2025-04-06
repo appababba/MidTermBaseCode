@@ -207,7 +207,7 @@
 1743139246 source:c:\users\dhany\desktop\csci178\midtermbasecode\src\_scene.cpp
 	"_scene.h"
 
-1743806481 source:c:\users\roryc\onedrive\desktop\csci178\midtermbasecode\main.cpp
+1743907943 source:c:\users\roryc\onedrive\desktop\csci178\midtermbasecode\main.cpp
 	<windows.h>
 	<_common.h>
 	<_scene.h>
@@ -221,7 +221,7 @@
 	<math.h>
 	<time.h>
 
-1743893655 c:\users\roryc\onedrive\desktop\csci178\midtermbasecode\include\_scene.h
+1743906765 c:\users\roryc\onedrive\desktop\csci178\midtermbasecode\include\_scene.h
 	<windows.h>
 	<GL/gl.h>
 	<vector>
@@ -394,7 +394,7 @@
 1743810108 source:c:\users\roryc\onedrive\desktop\csci178\midtermbasecode\src\_model.cpp
 	"_model.h"
 
-1743890920 source:c:\users\roryc\onedrive\desktop\csci178\midtermbasecode\src\_parallax.cpp
+1743897718 source:c:\users\roryc\onedrive\desktop\csci178\midtermbasecode\src\_parallax.cpp
 	"_parallax.h"
 	<GL/gl.h>
 
@@ -407,7 +407,7 @@
 	<_textureloader.h>
 	<_timer.h>
 
-1743897340 source:c:\users\roryc\onedrive\desktop\csci178\midtermbasecode\src\_scene.cpp
+1743910555 source:c:\users\roryc\onedrive\desktop\csci178\midtermbasecode\src\_scene.cpp
 	"_scene.h"
 	<windows.h>
 	<GL/glu.h>

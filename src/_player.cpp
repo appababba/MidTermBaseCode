@@ -28,7 +28,6 @@ _player::_player()
 _player::~_player()
 {
     //dtor
-    // Make sure you are NOT deleting pTex here
     delete pTmer; // Delete timer if created with new
     pTmer = nullptr;
 }
@@ -50,10 +49,9 @@ void _player::initPlayer(int xfrm, int yfrm)
     yMin = 0.0f;                    // Assuming frame 0 is at the top row in sprite sheet
     yMax = 1.0f / (float)framesY;   // Use yMax consistently for bottom coord
 
-    // <<< REMOVED >>> pTex->loadTexture(fileName); // Texture loaded in _scene now
+
 }
 
-// <<< MODIFIED >>> Signature matches _player.h, uses textureID
 void _player::drawPlayer(GLuint textureID)
 {
     // Set color (optional, useful for effects or debugging)
@@ -96,7 +94,6 @@ void _player::playerActions()
     switch(actionTrigger)
     {
         case STAND:
-            // Example: Set UVs to the first frame of the standing animation row (assuming row 0)
             xMin = 0.0f; // First frame
             xMax = frameWidth;
             yMin = 0.0f; // Assuming top row is standing anim
@@ -105,7 +102,6 @@ void _player::playerActions()
             break;
 
         case LEFTWALK:
-            // Example: Animate across a row (assuming row 1 is left walk)
             // Move player position
             plPos.x -= 0.01f; // <<< Adjust speed as needed
 
@@ -128,7 +124,6 @@ void _player::playerActions()
             break;
 
         case RIGHTWALK:
-            // Example: Animate across a row (assuming row 0 is right walk)
              // Move player position
             plPos.x += 0.01f; // <<< Adjust speed as needed
 
@@ -137,7 +132,6 @@ void _player::playerActions()
             {
                 xMin += frameWidth; // Move to next frame
                 xMax += frameWidth;
-                 // Assuming right walk animation is on the first row (index 0)
                 yMin = frameHeight * 0.0f;
                 yMax = frameHeight * 1.0f;
 
@@ -150,6 +144,5 @@ void _player::playerActions()
             }
             break;
 
-        // Add cases for RUN, JUMP, ATTACK etc. updating plPos and UV coords
     }
 }

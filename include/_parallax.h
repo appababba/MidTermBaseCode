@@ -14,13 +14,13 @@ class _parallax
         _parallax();
         virtual ~_parallax();
 
-        // <<< REMOVED >>> _textureLoader *background = new _textureLoader();
+        
         _timer *tmr = new _timer();
 
-        // <<< MODIFIED >>> Added textureID parameter
+        // Added textureID parameter
         void drawBackground(GLuint textureID, float width, float height);
 
-        // <<< MODIFIED >>> Takes no parameters now
+        //  Takes no parameters now
         void initPrlx();
 
         void scroll(bool, string, float); // Changed from std::string to string
