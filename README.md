@@ -37,3 +37,8 @@ simple 2d game for the csci 178 midterm. includes landing page, menu, help, game
 * **game:** `left`/`right arrows` -> move | `spacebar` -> shoot | `esc` -> pause
 * **pause menu:** `enter` -> quit | `esc` -> resume
 
+![image](https://github.com/user-attachments/assets/8ce7e759-1e37-48ce-bf9e-c7ffe015a5e6)
+![image](https://github.com/user-attachments/assets/8126c527-4f7a-4999-9888-947a6b9b50c2)
+![image](https://github.com/user-attachments/assets/543edb3d-9557-4e05-a717-1686713bc4d7)
+
+
